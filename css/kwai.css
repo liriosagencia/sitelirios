@@ -1,0 +1,1058 @@
+/* FONTS - Poppins customizadas */
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./fonts/poppins-v23-latin-500italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/poppins-v23-latin-700italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url('./fonts/poppins-v23-latin-900italic.woff2') format('woff2');
+}
+/* Reset básico */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #551E3E;
+}
+/* ------------------ HEADER ------------------ */
+.kwai-header {
+  background: url('../img/Fundopink.jpg') center/cover no-repeat fixed;
+  color: white;
+  padding: 1rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.kwai-header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.kwai-logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+.kwai-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.kwai-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  transition: color 0.3s;
+}
+.kwai-nav a:hover {
+  color: #ffd6ec;
+}
+@media (min-width: 768px) {
+  .kwai-header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .kwai-logo {
+    text-align: left;
+  }
+  .kwai-nav {
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+}
+/* BOTÕES */
+/* Estilo geral para kwai-cta-button (usado em outras seções) */
+/* === ESTILO DOS BOTÕES KWAI - MODERNIZADO === */
+.kwai-cta-button {
+  /* Layout e dimensões */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 320px; /* Tamanho fixo ideal */
+  padding: 14px 20px;
+  margin: 8px 0;
+
+  /* Tipografia */
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: white !important;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.4;
+
+  /* Estilo visual */
+  background: linear-gradient(135deg, #551E3E, #A62F6A);
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(85, 30, 62, 0.15);
+
+  /* Transição suave para hover e clique */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+
+  /* Evita quebras indesejadas */
+  white-space: normal;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+/* Efeito de hover: leve aumento e brilho */
+.kwai-cta-button:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 16px rgba(85, 30, 62, 0.25);
+  background: linear-gradient(135deg, #66254a, #B83A78);
+}
+
+/* Animação de clique (efeito de pressionar) */
+.kwai-cta-button:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* === ESPAÇAMENTO ENTRE OS DOIS GRUPOS DE BOTÕES (superior e inferior) === */
+.kwaii-btn-group + .kwaii-btn-group {
+  margin-top: 16px;
+}
+
+/* === RESPONSIVO: TELAS MENORES - botões em coluna, ocupando largura total === */
+@media (max-width: 768px) {
+  .kwai-cta-button {
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 12px 16px;
+    margin: 6px 0;
+  }
+
+  .kwaii-btn-group {
+    gap: 12px;
+  }
+
+  /* Ajuste de espaçamento entre os grupos */
+  .kwaii-btn-group + .kwaii-btn-group {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kwai-cta-button {
+    font-size: 0.95rem;
+    padding: 10px 14px;
+    margin: 5px 0;
+  }
+}
+
+/* SEÇÃO DESTAQUE - SEM ANIMAÇÕES */
+.kwai-sec-destaque {
+  position: relative;
+  background: url('../img/Fundoo.jpg') center/cover no-repeat fixed;
+  padding: 200px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+.kwai-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.kwai-sec-destaque .kwai-content h1 {
+  font-size: 200%;
+  margin-bottom: 20px;
+  color: #551E3E;
+  font-weight: 900;
+}
+.kwai-sec-destaque .kwai-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #551E3E;
+}
+.kwai-sec-destaque .kwai-btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  /* Centraliza o grupo de botões */
+  width: 100%;
+  text-align: center;
+}
+.porco-imagem {
+  position: absolute;
+  bottom: 200px;
+  left: 5px;
+  max-width: 18%;
+  height: auto;
+  z-index: 0;
+  opacity: 0.95;
+  pointer-events: none;
+}
+
+/* === ANIMAÇÕES PARA #sec-destaque === */
+/* Estados iniciais - tudo começa invisível e deslocado */
+#sec-destaque .kwai-content h1,
+#sec-destaque .kwai-content p,
+#sec-destaque .kwaii-btn-group, /* Note a classe kwaii-btn-group do seu HTML */
+#sec-destaque .kwai-cta-button, /* O botão dentro do grupo */
+#sec-destaque .porco-imagem {
+    opacity: 0;
+    /* Define um ponto de origem para transformações 3D, dando um efeito mais suave */
+    transform-origin: center center;
+    /* Transição base - o delay e timing serão controlados */
+    transition: all 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+    /* Garante que o elemento não fique invisível se o JS falhar */
+    will-change: opacity, transform;
+}
+
+/* Título - vem da esquerda */
+#sec-destaque .kwai-content h1 {
+    transform: translateX(-60px);
+}
+
+/* Parágrafo - vem da direita */
+#sec-destaque .kwai-content p {
+    transform: translateX(60px);
+}
+
+/* Grupo de botões - vem de baixo */
+#sec-destaque .kwaii-btn-group {
+    transform: translateY(40px);
+    /* Centraliza o grupo de botões para animação */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Botão - vem de baixo com leve escala */
+#sec-destaque .kwai-cta-button {
+    transform: translateY(30px) scale(0.95);
+    /* Centraliza o botão individualmente */
+    margin: 0 auto;
+}
+
+/* Imagem - vem da direita */
+#sec-destaque .porco-imagem {
+    transform: translateX(50px);
+}
+
+/* Estados animados - quando a classe 'destaque-animar' é adicionada à section */
+#sec-destaque.destaque-animar .kwai-content h1,
+#sec-destaque.destaque-animar .kwai-content p,
+#sec-destaque.destaque-animar .kwaii-btn-group,
+#sec-destaque.destaque-animar .kwai-cta-button,
+#sec-destaque.destaque-animar .porco-imagem {
+    opacity: 1;
+    transform: translateX(0) translateY(0) scale(1);
+}
+
+/* Atrasos escalonados para criar uma sequência harmônica */
+#sec-destaque.destaque-animar .kwai-content h1 {
+    transition-delay: 0.1s;
+}
+#sec-destaque.destaque-animar .kwai-content p {
+    transition-delay: 0.2s;
+}
+#sec-destaque.destaque-animar .kwaii-btn-group {
+    transition-delay: 0.3s;
+}
+#sec-destaque.destaque-animar .kwai-cta-button {
+    /* O botão herda o delay do grupo, mas podemos ajustar se necessário */
+    transition-delay: 0.4s;
+}
+#sec-destaque.destaque-animar .porco-imagem {
+    transition-delay: 0.25s; /* Imagem aparece junto com o parágrafo */
+}
+
+/* Estados ao sair da viewport - opcional para redefinir a animação */
+/* Isso fará com que a animação reinicie toda vez que a seção entrar na tela */
+#sec-destaque:not(.destaque-animar) .kwai-content h1,
+#sec-destaque:not(.destaque-animar) .kwai-content p,
+#sec-destaque:not(.destaque-animar) .kwaii-btn-group,
+#sec-destaque:not(.destaque-animar) .kwai-cta-button,
+#sec-destaque:not(.destaque-animar) .porco-imagem {
+    opacity: 0;
+    /* Reset básico para as posições iniciais */
+    transform: translateX(0) translateY(30px) scale(1);
+}
+#sec-destaque:not(.destaque-animar) .kwai-content h1 {
+    transform: translateX(-60px);
+}
+#sec-destaque:not(.destaque-animar) .kwai-content p {
+    transform: translateX(60px);
+}
+#sec-destaque:not(.destaque-animar) .kwaii-btn-group {
+    transform: translateY(40px);
+}
+#sec-destaque:not(.destaque-animar) .kwai-cta-button {
+    transform: translateY(30px) scale(0.95);
+}
+#sec-destaque:not(.destaque-animar) .porco-imagem {
+    transform: translateX(50px);
+}
+/* === FIM DAS ANIMAÇÕES PARA #sec-destaque === */
+
+/* ===== AJUSTES PARA TELAS MENORES ===== */
+@media (max-width: 1064px) {
+  .porco-imagem {
+    position: absolute;
+    top: 60px;
+    left: 30%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta o posicionamento */
+    max-width: 200px;
+    z-index: 1;
+  }
+  .kwai-sec-destaque {
+    padding: 200px 20px 50px 0px;
+  }
+  
+  /* Ajusta o título para telas menores */
+  .kwai-sec-destaque .kwai-content h1 {
+    font-size: 1.8rem; /* Reduz um pouco o tamanho da fonte */
+  }
+  
+  /* Ajusta o parágrafo para telas menores */
+  .kwai-sec-destaque .kwai-content p {
+    font-size: 1.1rem; /* Reduz um pouco o tamanho da fonte */
+  }
+  
+  /* Centraliza ainda mais os botões em telas pequenas */
+  .kwai-sec-destaque .kwai-btn-group {
+    flex-direction: column; /* Empilha os botões verticalmente */
+    align-items: center; /* Centraliza os botões verticalmente */
+    gap: 0.8rem; /* Reduz um pouco o espaçamento entre os botões */
+  }
+  
+  /* Ajusta o botão para telas menores */
+  .kwai-destaque-button {
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+    max-width: 300px; /* Limita a largura máxima */
+    font-size: 0.9rem; /* Reduz um pouco o tamanho da fonte */
+    padding: 12px 16px; /* Ajusta o padding */
+  }
+}
+
+/* ===== AJUSTES PARA TELAS MUITO PEQUENAS ===== */
+@media (max-width: 480px) {
+  .kwai-sec-destaque {
+    padding: 150px 15px 40px 15px; /* Reduz o padding nas laterais e inferior */
+  }
+  
+  .kwai-sec-destaque .kwai-content h1 {
+    font-size: 1.6rem; /* Reduz ainda mais o tamanho da fonte */
+    margin-bottom: 15px; /* Reduz a margem inferior */
+  }
+  
+  .kwai-sec-destaque .kwai-content p {
+    font-size: 1rem; /* Reduz ainda mais o tamanho da fonte */
+    margin-bottom: 20px; /* Reduz a margem inferior */
+  }
+  
+  .porco-imagem {
+    max-width: 150px; /* Reduz ainda mais o tamanho da imagem */
+    top: 40px; /* Ajusta a posição vertical */
+  }
+  
+  .kwai-destaque-button {
+    max-width: 100%; /* Permite que o botão ocupe toda a largura */
+    font-size: 0.85rem; /* Reduz ainda mais o tamanho da fonte */
+    padding: 10px 14px; /* Ajusta o padding */
+  }
+}
+/* ===== FIM DOS AJUSTES PARA TELAS MENORES ===== */
+/* SEÇÃO SERVIÇOS */
+.kwai-sec-servicos {
+  padding: 200px 20px;
+  background: url('../img/Fundoo.jpg') center/cover no-repeat fixed;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.kwai-sec-servicos h2 {
+  font-size: 1.7rem;
+  margin-bottom: 40px;
+  color: #551E3E;
+  font-weight: 900;
+}
+/* Grade de cards */
+.kwai-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* Cada card individual */
+.kwai-card {
+  background-color: #c42b89;
+  border-radius: 16px;
+  box-shadow:
+    -8px 0 16px rgba(0, 0, 0, 0.02),
+    8px 0 16px rgba(0, 0, 0, 0.08),
+    0 6px 12px rgba(0, 0, 0, 0.8);
+  padding: 45px 20px 20px;
+  width: 300px;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  flex: 0 0 auto;
+}
+.kwai-card h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.kwai-card p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+/* Imagem lateral */
+.imagem-homem {
+  position: absolute;
+  bottom: 200px;
+  right: 0;
+  max-width: 18%;
+  height: auto;
+  z-index: 0;
+  opacity: 0.95;
+  pointer-events: none;
+}
+/* Ícone no topo do card */
+.publico-item {
+  position: relative;
+  overflow: visible;
+}
+.publico-icon-topo {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+}
+/* ===== ANIMAÇÃO: SEC-SERVIÇOS ===== */
+/* Estados iniciais - apenas os elementos que devem ser animados */
+.kwai-card,
+.imagem-homem {
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+/* Animações com transform diferentes */
+.kwai-card:nth-child(1) {
+  transform: translateX(-30px);
+}
+.kwai-card:nth-child(2) {
+  transform: translateY(30px);
+}
+.kwai-card:nth-child(3) {
+  transform: translateX(30px);
+}
+.imagem-homem {
+  transform: translateX(-40px);
+}
+/* Estados animados */
+.servicos-animar .kwai-card:nth-child(1),
+.servicos-animar .kwai-card:nth-child(2),
+.servicos-animar .kwai-card:nth-child(3) {
+  opacity: 1;
+  transform: translate(0);
+}
+.servicos-animar .imagem-homem {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* ===== FIM: SEC-SERVIÇOS ===== */
+/* Responsivo: Tablet */
+@media (max-width: 1064px) {
+  .imagem-homem {
+    top: 500px;
+    right: 10%;
+    bottom: auto;
+    transform: translateX(50%);
+    max-width: 200px;
+    z-index: 0;
+  }
+  .kwai-sec-servicos {
+    padding: 80px 20px 50px;
+  }
+  .kwai-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Responsivo: Mobile */
+@media (max-width: 414px) {
+  .kwai-sec-servicos {
+    padding: 5px 10px 40px;
+  }
+  .imagem-homem {
+    display: none;
+  }
+  .kwai-sec-servicos h2 {
+    font-size: 1.5rem;
+  }
+  .kwai-card {
+    max-width: 90%;
+    padding: 30px 20px;
+  }
+  .kwai-card h3 {
+    font-size: 1.1rem;
+  }
+  .kwai-card p {
+    font-size: 0.9rem;
+  }
+}
+/* SEÇÃO VANTAGENS */
+.kwai-sec-vantagens {
+  padding: 200px 20px;
+  background: url('../img/Fundoo.jpg') center/cover no-repeat fixed;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.kwai-sec-vantagens h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 900;
+}
+.kwai-sec-vantagens ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.kwai-sec-vantagens li {
+  font-size: 1rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.coroak {
+  position: absolute;
+  top: 30%;
+  left: 5px;
+  transform: translateY(-50%);
+  max-width: 18%;
+  height: auto;
+  z-index: 0;
+  opacity: 0.95;
+  pointer-events: none;
+}
+/* ===== ANIMAÇÃO: SEC-VANTAGENS ===== */
+/* Estilos iniciais antes da animação */
+#sec-vantagens h2,
+#sec-vantagens li,
+#sec-vantagens .coroak {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.8s ease-out;
+}
+#sec-vantagens h2 {
+  transform: scale(0.9);
+}
+#sec-vantagens li {
+  transform: translateX(-30px);
+  list-style: none;
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+#sec-vantagens li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #ffcf2f;
+  font-weight: bold;
+}
+.coroak {
+  max-width: 250px;
+}
+/* Quando entra na tela */
+#sec-vantagens.vantagens-animar h2,
+#sec-vantagens.vantagens-animar li,
+#sec-vantagens.vantagens-animar .coroak {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(0) scale(1);
+}
+@media (max-width: 1064px) {
+  .coroak {
+    top: 28px;
+    left: 27%;
+    bottom: auto;
+    transform: translateX(-50%);
+    max-width: 160px;
+    z-index: 1;
+  }
+  .kwai-sec-vantagens {
+    padding: 200px 20px 50px 0px;
+  }
+}
+/* ===== FIM: SEC-VANTAGENS ===== */
+/* SEÇÃO CONTATO */
+.kwai-sec-contato {
+  padding: 200px 20px;
+  background: url('../img/Fundoo.jpg') center/cover no-repeat fixed;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.kwai-sec-contato h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+.kwai-sec-contato ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.kwai-sec-contato li {
+  font-size: 1rem;
+  margin: 8px 0;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.duvid {
+  position: absolute;
+  bottom: 300px;
+  right: 20px;
+  max-width: 18%;
+  height: auto;
+  z-index: 0;
+  opacity: 0.95;
+  pointer-events: none;
+  animation: float 3s ease-in-out infinite;
+}
+/* Animação de float para a imagem */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+/* Botão CTA - mantendo cores originais */
+/* Este estilo se aplica ao botão na seção contato */
+.kwai-cta-button { /* Reafirmado para clareza, é o mesmo definido no topo */
+  background: #A62F6A;
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 207, 47, 0.3);
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+  display: inline-flex; /* Pode ser necessário para alinhamento */
+  align-items: center;
+  justify-content: center;
+}
+.kwai-cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(57, 15, 44, 0.5);
+  background: #e407b1;
+}
+.kwai-cta-button:active {
+  transform: translateY(-1px);
+}
+@media (max-width: 1064px) {
+  .duvid {
+    top: 40px;
+    left: 30%;
+    bottom: auto;
+    transform: translateX(-50%);
+    max-width: 150px;
+    z-index: 1;
+    right: auto;
+  }
+  .kwai-sec-contato {
+    padding: 200px 20px 50px 0px;
+  }
+}
+/* ===== ANIMAÇÃO: SEC-CONTATO ===== */
+/* Estados iniciais */
+#sec-contato h2,
+#sec-contato li,
+#sec-contato .kwai-cta-button, /* Animação para o botão da seção contato */
+#sec-contato .duvid {
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+#sec-contato h2 {
+  transform: translateY(-30px);
+}
+#sec-contato li {
+  transform: translateX(-40px);
+}
+#sec-contato .kwai-cta-button { /* Animação para o botão da seção contato */
+  transform: translateY(30px) scale(0.9);
+}
+#sec-contato .duvid {
+  transform: translateY(40px) scale(0.8);
+}
+/* Estados animados */
+#sec-contato.contato-animar h2,
+#sec-contato.contato-animar li,
+#sec-contato.contato-animar .kwai-cta-button, /* Animação para o botão da seção contato */
+#sec-contato.contato-animar .duvid {
+  opacity: 1;
+  transform: translate(0) scale(1);
+}
+/* ===== FIM: SEC-CONTATO ===== */
+/* SEÇÃO FINAL */
+/* === SEÇÃO FINAL KWAI - ESTILO COMPLETO === */
+.kwai-sec-final {
+  background: url('../img/Fundoo.jpg') center/cover no-repeat fixed;
+  padding: 200px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.kwai-sec-final.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.kwai-sec-final h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #551E3E;
+  font-weight: 900;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease;
+}
+
+.kwai-sec-final.active h2 {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.kwai-sec-final p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #551E3E;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s ease 0.2s;
+}
+
+.kwai-sec-final.active p {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Grupo de botões - flexível e centralizado */
+.kwai-btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+/* === ESTILO DOS BOTÕES (links com aparência de botão) === */
+.kwai-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 320px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: white !important;
+  text-decoration: none;
+  text-align: center;
+  background: linear-gradient(135deg, #551E3E, #c42b89);
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(85, 30, 62, 0.15);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+/* Hover: leve elevação */
+.kwai-cta-button:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 16px rgba(85, 30, 62, 0.25);
+  background: linear-gradient(135deg, #66254a, #B83A78);
+}
+
+/* Efeito de clique (pressionar) */
+.kwai-cta-button:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Espaçamento entre os grupos de botões (superior e inferior) */
+.kwai-btn-group + .kwai-btn-group {
+  margin-top: 16px;
+}
+
+/* === ANIMAÇÃO DE CLIQUE (pulsar ao clicar) === */
+@keyframes buttonClickPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.kwai-cta-button.clicked {
+  animation: buttonClickPulse 0.3s ease;
+}
+
+/* === IMAGEM DECORATIVA (lâmpada) === */
+.lampada {
+  position: absolute;
+  bottom: 200px;
+  left: 100px;
+  max-width: 15%;
+  height: auto;
+  z-index: 0;
+  opacity: 0.95;
+  pointer-events: none;
+}
+
+/* === RESPONSIVO: TELAS MENORES === */
+@media (max-width: 1064px) {
+  .lampada {
+    top: 14px;
+    left: 35%;
+    bottom: auto;
+    transform: translateX(-50%);
+    max-width: 140px;
+    z-index: 1;
+  }
+  .kwai-sec-final {
+    padding: 200px 20px 50px 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kwai-cta-button {
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 12px 16px;
+    margin: 6px 0;
+  }
+
+  .kwai-btn-group + .kwai-btn-group {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kwai-sec-final {
+    padding: 180px 15px 40px 15px;
+  }
+
+  .kwai-sec-final h2 {
+    font-size: 1.8rem;
+  }
+
+  .kwai-sec-final p {
+    font-size: 1rem;
+  }
+
+  .kwai-cta-button {
+    font-size: 0.95rem;
+    padding: 10px 14px;
+  }
+}
+/* RESPONSIVO GERAL */
+@media (max-width: 768px) {
+  .kwai-sec-destaque .kwai-content h1 {
+    font-size: 2rem;
+  }
+  .kwai-sec-destaque .kwai-content p {
+    font-size: 1rem;
+  }
+  .kwai-sec-final h2 {
+    font-size: 1.8rem;
+  }
+  .kwai-sec-final p {
+    font-size: 1rem;
+  }
+  .kwai-cta-button, .kwai-destaque-button { /* Torna os botões responsivos */
+    width: 100%;
+    max-width: 300px;
+  }
+  .kwai-btn-group {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+.whatsapp-float img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+}
+@media (max-width: 480px) {
+  .whatsapp-float {
+    width: 40px;
+    height: 40px;
+    bottom: 15px;
+    right: 15px;
+  }
+  .whatsapp-float img {
+    width: 28px;
+    height: 28px;
+  }
+}
+/* BARRAS COLORIDAS */
+.barra-cores,
+.barra-cores-dupla {
+  display: flex;
+  height: 30px;
+  width: 100%;
+}
+.barra-cores::before,
+.barra-cores::after,
+.barra-cores div,
+.barra-cores-dupla::before,
+.barra-cores-dupla::after {
+  content: '';
+  flex: 1;
+}
+.barra-cores::before { background-color: #f17dc4; }
+.barra-cores div     { background-color: #c42d8e; }
+.barra-cores::after  { background-color: #4e1c38; }
+.barra-cores-dupla::before { background-color: #c42d8e; }
+.barra-cores-dupla::after  { background-color: #4e1c38; }
+@media (max-width: 768px) {
+  .barra-cores,
+  .barra-cores-dupla {
+    height: 20px;
+    z-index: 1000;
+  }
+}
+/* FOOTER */
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+@media (min-width: 1920px) {
+  .kwai-content,
+  .kwai-header-container,
+  .kwai-card-container {
+    max-width: 1400px;
+  }
+  .kwai-sec-destaque,
+  .kwai-sec-servicos,
+  .kwai-sec-vantagens,
+  .kwai-sec-contato,
+  .kwai-sec-final {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .porco-imagem,
+  .imagem-homem,
+  .duvid,
+  .lampada,
+  .coroak {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: auto;
+    max-width: 25%;
+    z-index: 0;
+    opacity: 0.9;
+    pointer-events: none;
+    padding: 100px;
+  }
+  
+}
+
+
+/* Animação de flutuação leve */
+.float-effect {
+  animation: floatEffect 3s ease-in-out infinite;
+}
+
+@keyframes floatEffect {
+  0%, 100% {
+    transform: translateY(0); /* Posição normal */
+  }
+  50% {
+    transform: translateY(-8px); /* Sobe um pouco */
+  }
+}
