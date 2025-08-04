@@ -1158,8 +1158,8 @@ display: none;
 
 /* ------------------ FOOTER ------------------ */
 footer {
-  background: #222;
-  color: #ccc;
+  background: #fefefe;
+  color: #000000;
   text-align: center;
   padding: 2rem;
   font-size: 0.9rem;
