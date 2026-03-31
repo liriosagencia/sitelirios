@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+@import './styles/animations.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== CONFIGURAÇÕES GLOBAIS ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #C00D5C;  /* ✅ COR DO DESIGN */
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* ===== FONTES PERSONALIZADAS ===== */
+@font-face {
+  font-family: 'Poppins-ExtraBold';
+  src: url('./assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('./assets/fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins-LightItalic';
+  src: url('./assets/fonts/Poppins-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ===== FONTES GLOBAIS ===== */
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins-Bold', 'Inter', sans-serif;
+}
+
+/* ===== SCROLLBAR PERSONALIZADA ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #C00D5C;  /* ✅ COR DO DESIGN */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F93BA3;  /* ✅ COR DO DESIGN */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #DB1277;  /* ✅ COR DO DESIGN */
+}
+
+/* ===== SELEÇÃO DE TEXTO ===== */
+::selection {
+  background: #F93BA3;  /* ✅ COR DO DESIGN */
+  color: #ffffff;
+}
+
+/* ===== ANIMAÇÕES ===== */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ===== UTILITÁRIOS DE OPACIDADE ===== */
+.opacity-10 { opacity: 0.1; }
+.opacity-15 { opacity: 0.15; }
+.opacity-20 { opacity: 0.2; }
+
+/* ===== FIX SCROLL HORIZONTAL ===== */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/* Garante que padding não aumente a largura */
+* {
+  box-sizing: border-box;
+}
+
+/* Previne que elementos absolutos vazem */
+[class*="absolute"] {
+  max-width: 100vw;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
