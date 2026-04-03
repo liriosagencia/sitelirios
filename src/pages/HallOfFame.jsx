@@ -51,13 +51,13 @@ export default function HallOfFame() {
   // 📅 ATUALIZAR DADOS AQUI TODO MÊS
   // ============================================
   
-  const currentMonth = "Fevereiro 2026";
+  const currentMonth = "Março 2026";
 
   const kwaiStats = {
-    views: "+350 Milhões",
-    paid: "+R$ 310 Mil",
+    views: "+422 Milhões",
+    paid: "+R$ 360 Mil",
     creators: "+500",
-    videos: "+25.250 mil"
+    videos: "+25.253 mil"
   };
 
 const top3Kwai = [
@@ -102,17 +102,23 @@ const kwaiRanking = [
 ];
 
   const kwaiMetrics = [
-    { label: "Média de views por criador", value: "162k" },
-    { label: "Média de vídeos publicados", value: "47/criador" },
-    { label: "Criadores que monetizaram", value: "92,7%" },
-    { label: "Taxa média de atividade", value: "85,4%" }
+    { label: "Média de views por criador", value: "724k" },
+    { label: "Média de vídeos publicados", value: "45/criador" },
+    { label: "Criadores que monetizaram", value: "341" },
+    { label: "Taxa média de atividade", value: "75,4%" }
   ];
 
   const tiktokShopStats = {
-    gmv: "R$ 342K",
-    activeCreators: "45",
-    productsSold: "1.8K"
+    gmv: "R$ 1.6M",
+    activeCreators: "341",
+    productsSold: "25.885K"
   };
+
+  const tiktokStatsConfig = [
+  { label: "GMV total da agência", value: tiktokShopStats.gmv },
+  { label: "Criadores ativos", value: tiktokShopStats.activeCreators },
+  { label: "Produtos vendidos", value: tiktokShopStats.productsSold }
+];
 
 const topTikTokShop = [
   { 
@@ -139,10 +145,10 @@ const topTikTokShop = [
 ];
 
   const tiktokShopMetrics = [
-    { label: "Número total de pedidos", value: "19790" },
-    { label: "Taxa de vendas", value: "73%" },
-    { label: "Criadores que venderam", value: "95" },
-    { label: "Média de GMV por criador", value: "R$ 17.370K" }
+    { label: "Número total de pedidos", value: "25885" },
+    { label: "Taxa de vendas", value: "70%" },
+    { label: "Criadores que venderam", value: "89" },
+    { label: "Média de GMV por criador", value: "R$ 22.437K" }
   ];
 
 const tiktokShopRanking = [
@@ -562,35 +568,35 @@ const tiktokShopRanking = [
               viewport={viewportConfig}
               variants={fadeInUp}
             >
-              Resultados TikTok Shop – <span style={{ color: '#F93BA3' }}>Fevereiro 2026</span>
+              Resultados TikTok Shop – <span style={{ color: '#F93BA3' }}>{currentMonth}</span>
             </motion.h2>
           </div>
           
-          <motion.div 
-            className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-5xl mx-auto px-2"
-            initial="hidden"
-            whileInView="visible"
-            viewport={viewportConfig}
-            variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
-          >
-            {[
-              { label: "GMV total da agência", value: "R$ 1.4M" },
-              { label: "Criadores ativos", value: "115" },
-              { label: "Produtos vendidos", value: "19.790K" }
-            ].map((stat, idx) => (
-              <motion.div 
-                key={idx} 
-                className="p-4 sm:p-6 rounded-2xl text-center" 
-                style={{ backgroundColor: '#F93BA3', boxShadow: '0 10px 40px rgba(249, 59, 163, 0.3)' }}
-                variants={scaleIn}
-                whileHover={{ scale: 1.05, y: -4 }}
-                transition={{ type: "spring", stiffness: 300, damping: 15 }}
-              >
-                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white mb-1 sm:mb-2" style={fontExtraBold}>{stat.value}</div>
-                <p className="text-white/90 text-[10px] sm:text-sm" style={fontBold}>{stat.label}</p>
-              </motion.div>
-            ))}
-          </motion.div>
+<motion.div 
+  className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-5xl mx-auto px-2"
+  initial="hidden"
+  whileInView="visible"
+  viewport={viewportConfig}
+  variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
+>
+  {tiktokStatsConfig.map((stat, idx) => (
+    <motion.div 
+      key={idx} 
+      className="p-4 sm:p-6 rounded-2xl text-center" 
+      style={{ backgroundColor: '#F93BA3', boxShadow: '0 10px 40px rgba(249, 59, 163, 0.3)' }}
+      variants={scaleIn}
+      whileHover={{ scale: 1.05, y: -4 }}
+      transition={{ type: "spring", stiffness: 300, damping: 15 }}
+    >
+      <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white mb-1 sm:mb-2" style={fontExtraBold}>
+        {stat.value}
+      </div>
+      <p className="text-white/90 text-[10px] sm:text-sm" style={fontBold}>
+        {stat.label}
+      </p>
+    </motion.div>
+  ))}
+</motion.div>
         </div>
       </section>
 
