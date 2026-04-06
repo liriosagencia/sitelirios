@@ -7,42 +7,49 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 text-center">
         <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-6">
           <Link 
-            to="/" 
+            to="/agencia-de-influenciadores" 
             className="text-white hover:text-white/70 transition text-sm"
             style={{ fontFamily: 'Poppins-Bold, sans-serif' }}
           >
             Home
           </Link>
           <Link 
-            to="/kwai" 
+            to="/ganhar-dinheiro-no-kwai" 
             className="text-white hover:text-white/70 transition text-sm"
             style={{ fontFamily: 'Poppins-Bold, sans-serif' }}
           >
             Kwai Criador
           </Link>
           <Link 
-            to="/kwai-sc" 
+            to="/cortes-para-kwai-cut" 
             className="text-white hover:text-white/70 transition text-sm"
             style={{ fontFamily: 'Poppins-Bold, sans-serif' }}
           >
             Kwai Cortes
           </Link>
           <Link 
-            to="/kwai-live" 
+            to="/ganhar-dinheiro-kwai-live" 
             className="text-white hover:text-white/70 transition text-sm"
             style={{ fontFamily: 'Poppins-Bold, sans-serif' }}
           >
             Kwai Live
           </Link>
           <Link 
-            to="/tiktok-shop" 
+            to="/como-vender-no-tiktok-shop" 
             className="text-white hover:text-white/70 transition text-sm"
             style={{ fontFamily: 'Poppins-Bold, sans-serif' }}
           >
             TikTok Shop
           </Link>
           <Link 
-            to="/contato" 
+            to="/top-10-lirios" 
+            className="text-white hover:text-white/70 transition text-sm"
+            style={{ fontFamily: 'Poppins-Bold, sans-serif' }}
+          >
+            Hall da Fama
+          </Link>
+          <Link 
+            to="/entrar-na-agencia" 
             className="text-white hover:text-white/70 transition text-sm"
             style={{ fontFamily: 'Poppins-Bold, sans-serif' }}
           >

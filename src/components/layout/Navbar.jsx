@@ -1,7 +1,7 @@
 // src/components/layout/Navbar.jsx
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Trophy } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import logoBranca from '../../assets/logo-branca.png';
 
 export default function Navbar() {
@@ -9,13 +9,13 @@ export default function Navbar() {
   const location = useLocation();
 
   const navLinks = [
-    { path: '/', label: 'Home' },
-    { path: '/kwai', label: 'Kwai Criador' },
-    { path: '/kwai-cortes', label: 'Kwai Cortes' },
-    { path: '/kwai-live', label: 'Kwai Live' },
-    { path: '/tiktok-shop', label: 'TikTok Shop' },
-    { path: '/hall-da-fama', label: 'Hall da Fama' },
-    { path: '/contato', label: 'Contato' },
+    { path: '/agencia-de-influenciadores', label: 'Home' },
+    { path: '/ganhar-dinheiro-no-kwai', label: 'Kwai Criador' },
+    { path: '/cortes-para-kwai-cut', label: 'Kwai Cortes' },
+    { path: '/ganhar-dinheiro-kwai-live', label: 'Kwai Live' },
+    { path: '/como-vender-no-tiktok-shop', label: 'TikTok Shop' },
+    { path: '/top-10-lirios', label: 'Hall da Fama' },
+    { path: '/entrar-na-agencia', label: 'Contato' },
   ];
 
   return (
@@ -23,7 +23,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/agencia-de-influenciadores" className="flex items-center">
             <img 
               src={logoBranca} 
               alt="LÍRIOS" 
@@ -43,7 +43,6 @@ export default function Navbar() {
                     : 'text-white hover:text-white/80'
                 }`}
               >
-                {link.icon && <link.icon size={14} className={location.pathname === link.path ? 'text-white/70' : 'text-white/60'} />}
                 {link.label}
               </Link>
             ))}
@@ -73,7 +72,6 @@ export default function Navbar() {
                     : 'text-white hover:text-white/80'
                 }`}
               >
-                {link.icon && <link.icon size={16} />}
                 {link.label}
               </Link>
             ))}

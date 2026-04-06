@@ -19,15 +19,15 @@ function App() {
       <div className="min-h-screen text-white">
         <Navbar />
         <main className="pt-20">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/kwai" element={<Kwai />} />
-            <Route path="/kwai-cortes" element={<KwaiSC />} />
-            <Route path="/kwai-live" element={<KwaiLive />} />
-            <Route path="/tiktok-shop" element={<TikTokShop />} />
-            <Route path="/hall-da-fama" element={<HallOfFame />} />
-            <Route path="/contato" element={<Contact />} />
-          </Routes>
+<Routes>
+  <Route path="/agencia-de-influenciadores" element={<Home />} />
+  <Route path="/ganhar-dinheiro-no-kwai" element={<Kwai />} />
+  <Route path="/cortes-para-kwai-cut" element={<KwaiSC />} />
+  <Route path="/ganhar-dinheiro-kwai-live" element={<KwaiLive />} />
+  <Route path="/como-vender-no-tiktok-shop" element={<TikTokShop />} />
+  <Route path="/top-10-lirios" element={<HallOfFame />} />
+  <Route path="/entrar-na-agencia" element={<Contact />} />
+</Routes>
         </main>
         <Footer />
         <WhatsAppFloat />

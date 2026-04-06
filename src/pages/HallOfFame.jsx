@@ -88,16 +88,16 @@ const top3Kwai = [
 
 
 const kwaiRanking = [
-  { pos: 1, handle: "@roniel.603.", views: "15,33M", category: "Life Records" },
-  { pos: 2, handle: "@armando65383", views: "13,18M", category: "Life Records" },
-  { pos: 3, handle: "@adrielson074l", views: "11,58M", category: "Life Records" },
-  { pos: 4, handle: "@ribadasvendas", views: "11,22M", category: "Life Records" },
-  { pos: 5, handle: "@joaovlogs100k983", views: "8,51M", category: "Life Records" },
-  { pos: 6, handle: "@zflpx570", views: "8,36M", category: "Life Records" },
-  { pos: 7, handle: "@Eiiiriba", views: "8,01M", category: "Life Records" },
-  { pos: 8, handle: "@thiagorafaelwaack", views: "7,58M", category: "Life Records" },
-  { pos: 9, handle: "@gilvandini299", views: "6,55M", category: "Comedy & Funny" },
-  { pos: 10, handle: "@equipedomilhoof", views: "6,28M", category: "Life Records" }
+  { pos: 1, handle: "@roniel.603.", views: "19,27M", category: "Life Records" },
+  { pos: 2, handle: "@armando65383", views: "15,21M", category: "Life Records" },
+  { pos: 3, handle: "@adrielson074l", views: "14,7M", category: "Life Records" },
+  { pos: 4, handle: "@ribadasvendas", views: "9,76M", category: "Life Records" },
+  { pos: 5, handle: "@joaovlogs100k983", views: "7,82M", category: "Life Records" },
+  { pos: 6, handle: "@zflpx570", views: "7,72M", category: "Life Records" },
+  { pos: 7, handle: "@Eiiiriba", views: "6,38M", category: "Life Records" },
+  { pos: 8, handle: "@thiagorafaelwaack", views: "6,34M", category: "Life Records" },
+  { pos: 9, handle: "@gilvandini299", views: "5,99M", category: "Comedy & Funny" },
+  { pos: 10, handle: "@equipedomilhoof", views: "5,62M", category: "Life Records" }
 ];
 
   const kwaiMetrics = [
