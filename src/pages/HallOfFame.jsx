@@ -63,26 +63,25 @@ export default function HallOfFame() {
 const top3Kwai = [
   { 
     rank: 2, 
-    handle: "@ribadasvendas", 
+    handle: "@armando65383", 
     views: "13,18M", 
     photo: rank1Photo, 
-    profile: "https://kwai.com/@ribadasvendas", 
+    profile: "https://kwai.com/@armando65383", 
     featured: true 
   },
   { 
     rank: 1, 
-
-    handle: "@roniel.603", 
+    handle: "@ronel.603.", 
     views: "15,33M", 
     photo: rank2Photo, 
     profile: "https://kwai.com/@roniel.603." 
   },
   { 
     rank: 3, 
-    handle: "@laplacesousa", 
+    handle: "@adrielson074l", 
     views: "11,58M", 
     photo: rank3Photo, 
-    profile: "https://kwai.com/@laplacesousa" 
+    profile: "https://kwai.com/@adrielson074l" 
   }
 ];
 
@@ -90,14 +89,14 @@ const top3Kwai = [
 
 const kwaiRanking = [
   { pos: 1, handle: "@roniel.603.", views: "15,33M", category: "Life Records" },
-  { pos: 2, handle: "@ribadasvendas", views: "13,18M", category: "Life Records" },
-  { pos: 3, handle: "@laplacesousa", views: "11,58M", category: "Life Records" },
-  { pos: 4, handle: "@adrielson074l", views: "11,22M", category: "Life Records" },
-  { pos: 5, handle: "@irmas.terra", views: "8,51M", category: "Life Records" },
-  { pos: 6, handle: "@armando65383", views: "8,36M", category: "Life Records" },
-  { pos: 7, handle: "@leoniltonsilva748", views: "8,01M", category: "Life Records" },
-  { pos: 8, handle: "@vaquirromotos", views: "7,58M", category: "Life Records" },
-  { pos: 9, handle: "@joaovlogs100k983", views: "6,55M", category: "Life Records" },
+  { pos: 2, handle: "@armando65383", views: "13,18M", category: "Life Records" },
+  { pos: 3, handle: "@adrielson074l", views: "11,58M", category: "Life Records" },
+  { pos: 4, handle: "@ribadasvendas", views: "11,22M", category: "Life Records" },
+  { pos: 5, handle: "@joaovlogs100k983", views: "8,51M", category: "Life Records" },
+  { pos: 6, handle: "@zflpx570", views: "8,36M", category: "Life Records" },
+  { pos: 7, handle: "@Eiiiriba", views: "8,01M", category: "Life Records" },
+  { pos: 8, handle: "@thiagorafaelwaack", views: "7,58M", category: "Life Records" },
+  { pos: 9, handle: "@gilvandini299", views: "6,55M", category: "Comedy & Funny" },
   { pos: 10, handle: "@equipedomilhoof", views: "6,28M", category: "Life Records" }
 ];
 
@@ -123,24 +122,24 @@ const kwaiRanking = [
 const topTikTokShop = [
   { 
     handle: "@cortes.da.constru", 
-    gmv: "R$ 287.923,54", 
-    product: "917", 
+    gmv: "R$ 250.647,48", 
+    product: "680", 
     photo: tiktokRank1, 
-    profile: "https://www.tiktok.com/@cortes.da.constru?is_from_webapp=1&sender_device=pc" 
+    profile: "https://www.tiktok.com/@cortes.da.constru" 
   },
   { 
-    handle: "@joaodosperfumes", 
-    gmv: "R$ 203.528,24", 
-    product: "1499", 
+    handle: "@shopdoalmeida", 
+    gmv: "R$ 241.917,01", 
+    product: "953", 
     photo: tiktokRank2, 
-    profile: "https://www.tiktok.com/@joaodosperfumes?is_from_webapp=1&sender_device=pc" 
+    profile: "https://www.tiktok.com/@shopdoalmeida" 
   },
   { 
     handle: "@acaciamarquess", 
-    gmv: "R$ 102.858,19", 
-    product: "2867", 
+    gmv: "R$ 153.873,31", 
+    product: "4265", 
     photo: tiktokRank3, 
-    profile: "https://www.tiktok.com/@acaciamarquess?is_from_webapp=1&sender_device=pc" 
+    profile: "https://www.tiktok.com/@acaciamarquess" 
   },
 ];
 
@@ -152,16 +151,16 @@ const topTikTokShop = [
   ];
 
 const tiktokShopRanking = [
-  { pos: 1, handle: "@cortes.da.constru", gmv: "R$ 287.923,54", itemsSold: 917 },
-  { pos: 2, handle: "@joaodosperfumes", gmv: "R$ 203.528,24", itemsSold: 1499 },
-  { pos: 3, handle: "@acaciamarquess", gmv: "R$ 102.858,19", itemsSold: 2867 },
-  { pos: 4, handle: "@alicinhaebianca", gmv: "R$ 82.446,20", itemsSold: 1128 },
-  { pos: 5, handle: "@joaorecomenda", gmv: "R$ 82.044,56", itemsSold: 887 },
-  { pos: 6, handle: "@araraazul60", gmv: "R$ 64.592,88", itemsSold: 813 },
-  { pos: 7, handle: "@shop_do_m.a", gmv: "R$ 63.690,97", itemsSold: 513 },
-  { pos: 8, handle: "@valeriiusza", gmv: "R$ 48.823,39", itemsSold: 1003 },
-  { pos: 9, handle: "@shopdoalmeida", gmv: "R$ 45.953,66", itemsSold: 1031 },
-  { pos: 10, handle: "@xandy3601", gmv: "R$ 41.990,59", itemsSold: 692 }
+  { pos: 1, handle: "@cortes.da.constru", gmv: "R$ 250.647,48", itemsSold: 680 },
+  { pos: 2, handle: "@shopdoalmeida", gmv: "R$ 241.917,01", itemsSold: 953 },
+  { pos: 3, handle: "@acaciamarquess", gmv: "R$ 153.873,31", itemsSold: 4265 },
+  { pos: 4, handle: "@joaorecomenda", gmv: "R$ 106.863,80", itemsSold: 1140 },
+  { pos: 5, handle: "@resenhadapescaria", gmv: "R$ 102.852,15", itemsSold: 1680 },
+  { pos: 6, handle: "@xandy3601", gmv: "R$ 94.183,63", itemsSold: 1318 },
+  { pos: 7, handle: "@araraazul60", gmv: "R$ 78.690,76", itemsSold: 832 },
+  { pos: 8, handle: "@alicinhaebianca", gmv: "R$ 76.342,50", itemsSold: 1372 },
+  { pos: 9, handle: "@shopdaniaih", gmv: "R$ 55.893,55", itemsSold: 4664 },
+  { pos: 10, handle: "@valeriiasza", gmv: "R$ 51.653,05", itemsSold: 760 }
 ];
 
   // Fonts reutilizáveis
