@@ -64,7 +64,7 @@ const top3Kwai = [
   { 
     rank: 2, 
     handle: "@armando65383", 
-    views: "13,18M", 
+    views: "15,21M", 
     photo: rank1Photo, 
     profile: "https://kwai.com/@armando65383", 
     featured: true 
@@ -72,14 +72,14 @@ const top3Kwai = [
   { 
     rank: 1, 
     handle: "@ronel.603.", 
-    views: "15,33M", 
+    views: "19,27M", 
     photo: rank2Photo, 
     profile: "https://kwai.com/@roniel.603." 
   },
   { 
     rank: 3, 
     handle: "@adrielson074l", 
-    views: "11,58M", 
+    views: "14,7M", 
     photo: rank3Photo, 
     profile: "https://kwai.com/@adrielson074l" 
   }
