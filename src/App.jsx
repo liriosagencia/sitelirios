@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'; // ✅ Adicione Navigate aqui
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import WhatsAppFloat from './components/layout/WhatsAppFloat';
@@ -14,20 +14,22 @@ import ScrollToTop from './components/layout/ScrollToTop';
 function App() {
   return (
     <BrowserRouter>
-      {/* ✅ REMOVA bg-gray-950 daqui */}
       <ScrollToTop />
       <div className="min-h-screen text-white">
         <Navbar />
         <main className="pt-20">
-<Routes>
-  <Route path="/agencia-de-influenciadores" element={<Home />} />
-  <Route path="/ganhar-dinheiro-no-kwai" element={<Kwai />} />
-  <Route path="/cortes-para-kwai-cut" element={<KwaiSC />} />
-  <Route path="/ganhar-dinheiro-kwai-live" element={<KwaiLive />} />
-  <Route path="/como-vender-no-tiktok-shop" element={<TikTokShop />} />
-  <Route path="/top-10-lirios" element={<HallOfFame />} />
-  <Route path="/entrar-na-agencia" element={<Contact />} />
-</Routes>
+          <Routes>
+            {/* ✅ ADICIONE ESTA LINHA - Redireciona a raiz para home */}
+            <Route path="/" element={<Navigate to="/agencia-de-influenciadores" replace />} />
+            
+            <Route path="/agencia-de-influenciadores" element={<Home />} />
+            <Route path="/ganhar-dinheiro-no-kwai" element={<Kwai />} />
+            <Route path="/cortes-para-kwai-cut" element={<KwaiSC />} />
+            <Route path="/ganhar-dinheiro-kwai-live" element={<KwaiLive />} />
+            <Route path="/como-vender-no-tiktok-shop" element={<TikTokShop />} />
+            <Route path="/top-10-lirios" element={<HallOfFame />} />
+            <Route path="/entrar-na-agencia" element={<Contact />} />
+          </Routes>
         </main>
         <Footer />
         <WhatsAppFloat />
