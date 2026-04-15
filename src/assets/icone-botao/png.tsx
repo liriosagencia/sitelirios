@@ -1,0 +1,1 @@
+// src/assets/icone-botao/png.tsx
