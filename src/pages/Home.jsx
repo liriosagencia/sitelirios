@@ -132,7 +132,8 @@ export default function Home() {
               variants={fadeInUp}
               transition={{ delay: 0.25 }}
             >
-              <Link to="/kwai" className="w-full sm:w-auto">
+              {/* ✅ Path atualizado: /kwai → /ganhar-dinheiro-no-kwai */}
+              <Link to="/ganhar-dinheiro-no-kwai" className="w-full sm:w-auto">
                 <motion.button 
                   className="w-full sm:w-auto px-5 sm:px-6 md:px-8 py-3 sm:py-3 md:py-4 rounded-full text-white flex items-center justify-center gap-2 sm:gap-2 md:gap-3 hover:opacity-90 shadow-lg"
                   style={{ backgroundColor: '#F93BA3', ...fontExtraBold }}
@@ -145,7 +146,8 @@ export default function Home() {
                 </motion.button>
               </Link>
               
-              <Link to="/tiktok-shop" className="w-full sm:w-auto">
+              {/* ✅ Path atualizado: /tiktok-shop → /como-vender-no-tiktok-shop */}
+              <Link to="/como-vender-no-tiktok-shop" className="w-full sm:w-auto">
                 <motion.button 
                   className="w-full sm:w-auto px-5 sm:px-6 md:px-8 py-3 sm:py-3 md:py-4 rounded-full text-white flex items-center justify-center gap-2 sm:gap-2 md:gap-3 hover:opacity-90 shadow-lg"
                   style={{ backgroundColor: '#F93BA3', ...fontExtraBold }}
@@ -337,11 +339,12 @@ export default function Home() {
               visible: { transition: { staggerChildren: 0.15 } }
             }}
           >
+            {/* ✅ Todos os paths atualizados conforme Navbar.jsx */}
             {[
-              { to: "/kwai", icon: kwaiIcone, title: "KWAI CRIADORES", desc: "Monetização em dólar por vídeos originais.", btn: "Acessar Página Kwai" },
-              { to: "/kwai-sc", icon: kwaiscIcone, title: "KWAI SC (Sistema de Cortes)", desc: "Ganhe com cortes estratégicos e alto volume de visualizações.", btn: "Acessar Página Kwai SC" },
-              { to: "/kwai-live", icon: kwaiIcone, title: "KWAI LIVE", desc: "Monetize transmissões ao vivo com suporte e metas estruturadas.", btn: "Acessar Página Kwai Live" },
-              { to: "/tiktok-shop", icon: tiktokshopIcone, title: "TIKTOK SHOP", desc: "Ganhe comissões vendendo produtos no TikTok.", btn: "Acessar Página TikTok Shop" }
+              { to: "/ganhar-dinheiro-no-kwai", icon: kwaiIcone, title: "KWAI CRIADORES", desc: "Monetização em dólar por vídeos originais.", btn: "Acessar Página Kwai" },
+              { to: "/cortes-para-kwai-cut", icon: kwaiscIcone, title: "KWAI SC (Sistema de Cortes)", desc: "Ganhe com cortes estratégicos e alto volume de visualizações.", btn: "Acessar Página Kwai SC" },
+              { to: "/ganhar-dinheiro-kwai-live", icon: kwaiIcone, title: "KWAI LIVE", desc: "Monetize transmissões ao vivo com suporte e metas estruturadas.", btn: "Acessar Página Kwai Live" },
+              { to: "/como-vender-no-tiktok-shop", icon: tiktokshopIcone, title: "TIKTOK SHOP", desc: "Ganhe comissões vendendo produtos no TikTok.", btn: "Acessar Página TikTok Shop" }
             ].map((service, idx) => (
               <Link to={service.to} key={idx} className="group block">
                 <motion.div 
@@ -507,7 +510,8 @@ export default function Home() {
               ))}
             </motion.div>
             
-            <Link to="/contato" className="inline-block">
+            {/* ✅ Path atualizado: /contato → /entrar-na-agencia */}
+            <Link to="/entrar-na-agencia" className="inline-block">
               <motion.button 
                 className="px-5 sm:px-6 md:px-8 py-3 sm:py-3 md:py-4 rounded-full text-white font-semibold inline-flex items-center gap-2 sm:gap-2 md:gap-3 hover:opacity-90 shadow-lg w-full sm:w-auto justify-center"
                 style={{ 
@@ -602,7 +606,8 @@ export default function Home() {
         variants={fadeInUp}
         transition={{ delay: 0.25 }}
       >
-        <Link to="/kwai" className="w-full md:w-auto">
+        {/* ✅ Path atualizado: /kwai → /ganhar-dinheiro-no-kwai */}
+        <Link to="/ganhar-dinheiro-no-kwai" className="w-full md:w-auto">
           <motion.button 
             className="w-full px-6 sm:px-8 md:px-10 py-3.5 sm:py-4 md:py-5 rounded-full text-white font-bold text-sm sm:text-base md:text-lg lg:text-xl flex items-center justify-center gap-2 sm:gap-2 md:gap-3 hover:opacity-90 shadow-2xl"
             style={{ 
@@ -619,7 +624,8 @@ export default function Home() {
           </motion.button>
         </Link>
         
-        <Link to="/tiktok-shop" className="w-full md:w-auto">
+        {/* ✅ Path atualizado: /tiktok-shop → /como-vender-no-tiktok-shop */}
+        <Link to="/como-vender-no-tiktok-shop" className="w-full md:w-auto">
           <motion.button 
             className="w-full px-6 sm:px-8 md:px-10 py-3.5 sm:py-4 md:py-5 rounded-full text-white font-bold text-sm sm:text-base md:text-lg lg:text-xl flex items-center justify-center gap-2 sm:gap-2 md:gap-3 hover:opacity-90 shadow-2xl"
             style={{ 

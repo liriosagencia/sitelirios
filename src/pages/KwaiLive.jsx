@@ -172,7 +172,8 @@ export default function KwaiLive() {
               variants={fadeInUp}
               transition={{ delay: 0.3 }}
             >
-              <Link to="/contato" className="w-full sm:w-auto">
+              {/* ✅ Path atualizado: /contato → /entrar-na-agencia */}
+              <Link to="/entrar-na-agencia" className="w-full sm:w-auto">
                 <motion.button 
                   className="w-full sm:w-auto px-5 sm:px-6 md:px-8 py-3 sm:py-4 rounded-full text-white font-bold flex items-center justify-center gap-2 sm:gap-3 hover:opacity-90 shadow-lg" 
                   style={{ backgroundColor: '#F93BA3', ...fontExtraBold, boxShadow: '0 10px 40px rgba(249, 59, 163, 0.4)' }}
@@ -185,7 +186,8 @@ export default function KwaiLive() {
                 </motion.button>
               </Link>
               
-              <Link to="#como-funciona" className="w-full sm:w-auto">
+              {/* ✅ Anchor link interno - Mantido como está */}
+              <a href="#como-funciona" className="w-full sm:w-auto">
                 <motion.button 
                   className="w-full sm:w-auto px-5 sm:px-6 md:px-8 py-3 sm:py-4 rounded-full text-white font-bold flex items-center justify-center gap-2 sm:gap-3 hover:opacity-90 shadow-lg" 
                   style={{ backgroundColor: '#F93BA3', ...fontExtraBold, boxShadow: '0 10px 40px rgba(249, 59, 163, 0.4)' }}
@@ -196,7 +198,7 @@ export default function KwaiLive() {
                   <img src={interr} alt="Interrogação" className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 object-contain" />
                   <span className="text-xs sm:text-sm md:text-base">Ver Como Funciona</span>
                 </motion.button>
-              </Link>
+              </a>
             </motion.div>
           </div>
         </div>
@@ -520,7 +522,8 @@ export default function KwaiLive() {
               </motion.p>
               
               <motion.div variants={fadeInUp} transition={{ delay: 0.2 }}>
-                <Link to="/contato">
+                {/* ✅ Path atualizado: /contato → /entrar-na-agencia */}
+                <Link to="/entrar-na-agencia">
                   <motion.button 
                     className="px-8 sm:px-10 py-4 sm:py-5 rounded-full text-white font-bold text-sm sm:text-lg inline-flex items-center gap-2 sm:gap-3 hover:opacity-90 shadow-2xl" 
                     style={{ backgroundColor: '#F93BA3', ...fontExtraBold, boxShadow: '0 10px 40px rgba(249, 59, 163, 0.4)' }}

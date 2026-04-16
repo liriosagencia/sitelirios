@@ -143,7 +143,8 @@ export default function TikTokShop() {
               variants={fadeInUp}
               transition={{ delay: 0.3 }}
             >
-              <Link to="/contato" className="w-full sm:w-auto">
+              {/* ✅ Path atualizado: /contato → /entrar-na-agencia */}
+              <Link to="/entrar-na-agencia" className="w-full sm:w-auto">
                 <motion.button 
                   className="w-full sm:w-auto px-5 sm:px-6 md:px-8 py-3 sm:py-4 rounded-full text-white font-bold flex items-center justify-center gap-2 sm:gap-3 hover:opacity-90 shadow-lg" 
                   style={{ backgroundColor: '#F93BA3', ...fontExtraBold, boxShadow: '0 10px 40px rgba(249, 59, 163, 0.4)' }}
@@ -156,7 +157,8 @@ export default function TikTokShop() {
                 </motion.button>
               </Link>
               
-              <Link to="/hall-da-fama" className="w-full sm:w-auto">
+              {/* ✅ Path atualizado: /hall-da-fama → /top-10-lirios */}
+              <Link to="/top-10-lirios" className="w-full sm:w-auto">
                 <motion.button 
                   className="w-full sm:w-auto px-5 sm:px-6 md:px-8 py-3 sm:py-4 rounded-full text-white font-bold flex items-center justify-center gap-2 sm:gap-3 hover:opacity-90 shadow-lg" 
                   style={{ backgroundColor: '#F93BA3', ...fontExtraBold, boxShadow: '0 10px 40px rgba(249, 59, 163, 0.4)' }}
@@ -292,7 +294,8 @@ export default function TikTokShop() {
             variants={fadeInUp}
             transition={{ delay: 0.3 }}
           >
-            <Link to="/contato" className="w-full sm:w-auto">
+            {/* ✅ Path atualizado: /contato → /entrar-na-agencia */}
+            <Link to="/entrar-na-agencia" className="w-full sm:w-auto">
               <motion.button 
                 className="px-6 sm:px-8 py-3 sm:py-4 rounded-full text-white font-bold flex items-center justify-center gap-2 sm:gap-3 hover:opacity-90 shadow-lg mx-auto" 
                 style={{ backgroundColor: '#F93BA3', ...fontExtraBold, boxShadow: '0 10px 40px rgba(249, 59, 163, 0.4)' }}
@@ -481,7 +484,8 @@ export default function TikTokShop() {
               </motion.p>
               
               <motion.div variants={fadeInUp} transition={{ delay: 0.2 }}>
-                <Link to="/contato" className="w-full sm:w-auto">
+                {/* ✅ Path atualizado: /contato → /entrar-na-agencia */}
+                <Link to="/entrar-na-agencia" className="w-full sm:w-auto">
                   <motion.button 
                     className="px-8 sm:px-10 py-4 sm:py-5 rounded-full text-white font-bold text-sm sm:text-lg inline-flex items-center gap-2 sm:gap-3 hover:opacity-90 shadow-2xl" 
                     style={{ backgroundColor: '#F93BA3', ...fontExtraBold, boxShadow: '0 10px 40px rgba(249, 59, 163, 0.4)' }}

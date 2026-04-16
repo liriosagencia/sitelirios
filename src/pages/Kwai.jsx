@@ -164,7 +164,8 @@ export default function Kwai() {
               variants={fadeInUp}
               transition={{ delay: 0.3 }}
             >
-              <Link to="/contato">
+              {/* ✅ Path atualizado: /contato → /entrar-na-agencia */}
+              <Link to="/entrar-na-agencia">
                 <motion.button 
                   className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-full text-white font-bold flex items-center justify-center gap-2 sm:gap-3 hover:opacity-90 shadow-lg"
                   style={{ 
@@ -181,7 +182,8 @@ export default function Kwai() {
                 </motion.button>
               </Link>
               
-              <Link to="/hall-da-fama">
+              {/* ✅ Path atualizado: /hall-da-fama → /top-10-lirios */}
+              <Link to="/top-10-lirios">
                 <motion.button 
                   className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-full text-white font-bold flex items-center justify-center gap-2 sm:gap-3 hover:opacity-90 shadow-lg"
                   style={{ 
@@ -316,7 +318,8 @@ export default function Kwai() {
             variants={fadeInUp}
             transition={{ delay: 0.3 }}
           >
-            <Link to="/contato">
+            {/* ✅ Path atualizado: /contato → /entrar-na-agencia */}
+            <Link to="/entrar-na-agencia">
               <motion.button 
                 className="px-6 sm:px-8 py-3 sm:py-4 rounded-full text-white font-bold inline-flex items-center gap-2 sm:gap-3 hover:opacity-90 shadow-lg"
                 style={{ 
@@ -435,7 +438,7 @@ export default function Kwai() {
       <section className="relative py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-white overflow-visible">
         {/* Mascote na esquerda - COM FLUTUAÇÃO */}
         <motion.div 
-          className="absolute left-0 bottom-[-50px] lg:left-0 lg:bottom-0 w-[60px] sm:w-[80px] lg:w-1/3 sm:lg:w-1/4 lg:max-w-[200px] sm:lg:max-w-[250px] lg:max-w-[300px] z-10 pointer-events-none block"
+          className="absolute left-0 bottom-[-50px] lg:left-0 lg:bottom-0 w-[60px] sm:w-[80px] sm:lg:w-1/4 lg:max-w-[300px] z-10 pointer-events-none block"
           animate={{ y: [0, -10, 0] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         >
@@ -605,7 +608,8 @@ export default function Kwai() {
             variants={fadeInUp}
             transition={{ delay: 0.25 }}
           >
-            <Link to="/contato">
+            {/* ✅ Path atualizado: /contato → /entrar-na-agencia */}
+            <Link to="/entrar-na-agencia">
               <motion.button 
                 className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 rounded-full text-white font-bold text-sm sm:text-base md:text-lg inline-flex items-center gap-2 sm:gap-3 hover:opacity-90 shadow-2xl"
                 style={{ 

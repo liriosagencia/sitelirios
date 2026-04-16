@@ -60,45 +60,46 @@ export default function HallOfFame() {
     videos: "+25.253 mil"
   };
 
-const top3Kwai = [
-  { 
-    rank: 2, 
-    handle: "@armando65383", 
-    views: "15,21M", 
-    photo: rank1Photo, 
-    profile: "https://kwai.com/@armando65383", 
-    featured: true 
-  },
-  { 
-    rank: 1, 
-    handle: "@ronel.603.", 
-    views: "19,27M", 
-    photo: rank2Photo, 
-    profile: "https://kwai.com/@roniel.603." 
-  },
-  { 
-    rank: 3, 
-    handle: "@adrielson074l", 
-    views: "14,7M", 
-    photo: rank3Photo, 
-    profile: "https://kwai.com/@adrielson074l" 
-  }
-];
+  const top3Kwai = [
+    { 
+      rank: 2, 
+      handle: "@armando65383", 
+      views: "15,21M", 
+      photo: rank1Photo, 
+      profile: "https://kwai.com/@armando65383", 
+      featured: true,
+      prize: "Bônus de Performance" // ✅ Adicionado: propriedade prize
+    },
+    { 
+      rank: 1, 
+      handle: "@ronel.603.", 
+      views: "19,27M", 
+      photo: rank2Photo, 
+      profile: "https://kwai.com/@roniel.603.",
+      prize: "Premiação Ouro + Bônus" // ✅ Adicionado: propriedade prize
+    },
+    { 
+      rank: 3, 
+      handle: "@adrielson074l", 
+      views: "14,7M", 
+      photo: rank3Photo, 
+      profile: "https://kwai.com/@adrielson074l",
+      prize: "Bônus de Destaque" // ✅ Adicionado: propriedade prize
+    }
+  ];
 
-
-
-const kwaiRanking = [
-  { pos: 1, handle: "@roniel.603.", views: "19,27M", category: "Life Records" },
-  { pos: 2, handle: "@armando65383", views: "15,21M", category: "Life Records" },
-  { pos: 3, handle: "@adrielson074l", views: "14,7M", category: "Life Records" },
-  { pos: 4, handle: "@ribadasvendas", views: "9,76M", category: "Life Records" },
-  { pos: 5, handle: "@joaovlogs100k983", views: "7,82M", category: "Life Records" },
-  { pos: 6, handle: "@zflpx570", views: "7,72M", category: "Life Records" },
-  { pos: 7, handle: "@Eiiiriba", views: "6,38M", category: "Life Records" },
-  { pos: 8, handle: "@thiagorafaelwaack", views: "6,34M", category: "Life Records" },
-  { pos: 9, handle: "@gilvandini299", views: "5,99M", category: "Comedy & Funny" },
-  { pos: 10, handle: "@equipedomilhoof", views: "5,62M", category: "Life Records" }
-];
+  const kwaiRanking = [
+    { pos: 1, handle: "@roniel.603.", views: "19,27M", category: "Life Records" },
+    { pos: 2, handle: "@armando65383", views: "15,21M", category: "Life Records" },
+    { pos: 3, handle: "@adrielson074l", views: "14,7M", category: "Life Records" },
+    { pos: 4, handle: "@ribadasvendas", views: "9,76M", category: "Life Records" },
+    { pos: 5, handle: "@joaovlogs100k983", views: "7,82M", category: "Life Records" },
+    { pos: 6, handle: "@zflpx570", views: "7,72M", category: "Life Records" },
+    { pos: 7, handle: "@Eiiiriba", views: "6,38M", category: "Life Records" },
+    { pos: 8, handle: "@thiagorafaelwaack", views: "6,34M", category: "Life Records" },
+    { pos: 9, handle: "@gilvandini299", views: "5,99M", category: "Comedy & Funny" },
+    { pos: 10, handle: "@equipedomilhoof", views: "5,62M", category: "Life Records" }
+  ];
 
   const kwaiMetrics = [
     { label: "Média de views por criador", value: "724k" },
@@ -114,34 +115,34 @@ const kwaiRanking = [
   };
 
   const tiktokStatsConfig = [
-  { label: "GMV total da agência", value: tiktokShopStats.gmv },
-  { label: "Criadores ativos", value: tiktokShopStats.activeCreators },
-  { label: "Produtos vendidos", value: tiktokShopStats.productsSold }
-];
+    { label: "GMV total da agência", value: tiktokShopStats.gmv },
+    { label: "Criadores ativos", value: tiktokShopStats.activeCreators },
+    { label: "Produtos vendidos", value: tiktokShopStats.productsSold }
+  ];
 
-const topTikTokShop = [
-  { 
-    handle: "@cortes.da.constru", 
-    gmv: "R$ 250.647,48", 
-    product: "680", 
-    photo: tiktokRank1, 
-    profile: "https://www.tiktok.com/@cortes.da.constru" 
-  },
-  { 
-    handle: "@shopdoalmeida", 
-    gmv: "R$ 241.917,01", 
-    product: "953", 
-    photo: tiktokRank2, 
-    profile: "https://www.tiktok.com/@shopdoalmeida" 
-  },
-  { 
-    handle: "@acaciamarquess", 
-    gmv: "R$ 153.873,31", 
-    product: "4265", 
-    photo: tiktokRank3, 
-    profile: "https://www.tiktok.com/@acaciamarquess" 
-  },
-];
+  const topTikTokShop = [
+    { 
+      handle: "@cortes.da.constru", 
+      gmv: "R$ 250.647,48", 
+      product: "680", 
+      photo: tiktokRank1, 
+      profile: "https://www.tiktok.com/@cortes.da.constru" 
+    },
+    { 
+      handle: "@shopdoalmeida", 
+      gmv: "R$ 241.917,01", 
+      product: "953", 
+      photo: tiktokRank2, 
+      profile: "https://www.tiktok.com/@shopdoalmeida" 
+    },
+    { 
+      handle: "@acaciamarquess", 
+      gmv: "R$ 153.873,31", 
+      product: "4265", 
+      photo: tiktokRank3, 
+      profile: "https://www.tiktok.com/@acaciamarquess" 
+    },
+  ];
 
   const tiktokShopMetrics = [
     { label: "Número total de pedidos", value: "25885" },
@@ -150,18 +151,18 @@ const topTikTokShop = [
     { label: "Média de GMV por criador", value: "R$ 22.437K" }
   ];
 
-const tiktokShopRanking = [
-  { pos: 1, handle: "@cortes.da.constru", gmv: "R$ 250.647,48", itemsSold: 680 },
-  { pos: 2, handle: "@shopdoalmeida", gmv: "R$ 241.917,01", itemsSold: 953 },
-  { pos: 3, handle: "@acaciamarquess", gmv: "R$ 153.873,31", itemsSold: 4265 },
-  { pos: 4, handle: "@joaorecomenda", gmv: "R$ 106.863,80", itemsSold: 1140 },
-  { pos: 5, handle: "@resenhadapescaria", gmv: "R$ 102.852,15", itemsSold: 1680 },
-  { pos: 6, handle: "@xandy3601", gmv: "R$ 94.183,63", itemsSold: 1318 },
-  { pos: 7, handle: "@araraazul60", gmv: "R$ 78.690,76", itemsSold: 832 },
-  { pos: 8, handle: "@alicinhaebianca", gmv: "R$ 76.342,50", itemsSold: 1372 },
-  { pos: 9, handle: "@shopdaniaih", gmv: "R$ 55.893,55", itemsSold: 4664 },
-  { pos: 10, handle: "@valeriiasza", gmv: "R$ 51.653,05", itemsSold: 760 }
-];
+  const tiktokShopRanking = [
+    { pos: 1, handle: "@cortes.da.constru", gmv: "R$ 250.647,48", itemsSold: 680 },
+    { pos: 2, handle: "@shopdoalmeida", gmv: "R$ 241.917,01", itemsSold: 953 },
+    { pos: 3, handle: "@acaciamarquess", gmv: "R$ 153.873,31", itemsSold: 4265 },
+    { pos: 4, handle: "@joaorecomenda", gmv: "R$ 106.863,80", itemsSold: 1140 },
+    { pos: 5, handle: "@resenhadapescaria", gmv: "R$ 102.852,15", itemsSold: 1680 },
+    { pos: 6, handle: "@xandy3601", gmv: "R$ 94.183,63", itemsSold: 1318 },
+    { pos: 7, handle: "@araraazul60", gmv: "R$ 78.690,76", itemsSold: 832 },
+    { pos: 8, handle: "@alicinhaebianca", gmv: "R$ 76.342,50", itemsSold: 1372 },
+    { pos: 9, handle: "@shopdaniaih", gmv: "R$ 55.893,55", itemsSold: 4664 },
+    { pos: 10, handle: "@valeriiasza", gmv: "R$ 51.653,05", itemsSold: 760 }
+  ];
 
   // Fonts reutilizáveis
   const fontExtraBold = { fontFamily: 'Poppins-ExtraBold, sans-serif' };
@@ -412,37 +413,37 @@ const tiktokShopRanking = [
         </div>
       </section>
 
-{/* 🎬 4️⃣ VÍDEO DO CRIADOR (PROVA SOCIAL) */}
-<section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#C00D5C' }}>
-  <div className="max-w-7xl mx-auto text-center">
-    <div className="max-w-4xl mx-auto px-2">
-      <motion.h2 
-        className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 text-white" 
-        style={fontExtraBold}
-        initial="hidden"
-        whileInView="visible"
-        viewport={viewportConfig}
-        variants={fadeInUp}
-      >
-        Criadores que se destacaram
-      </motion.h2>
-      
-      {/* Vídeo em destaque - formato VERTICAL 9/16 */}
-      <div className="max-w-md mx-auto">
-        <VideoTestimonialCard 
-          videoId="lb6vOY1dNBQ"
-          title=""
-          aspectRatio="9/16"         // ✅ formato vertical (Shorts)
-          showTitle={true}           // exibe título dentro do card
-          fontBold={fontBold}        // estilo da fonte
-          showHoverScale={true}      // mantém o hover scale
-          controls={0}               // ✅ esconde controles para Shorts
-        />
-      </div>
-      
-    </div>
-  </div>
-</section>
+      {/* 🎬 4️⃣ VÍDEO DO CRIADOR (PROVA SOCIAL) */}
+      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#C00D5C' }}>
+        <div className="max-w-7xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto px-2">
+            <motion.h2 
+              className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 text-white" 
+              style={fontExtraBold}
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewportConfig}
+              variants={fadeInUp}
+            >
+              Criadores que se destacaram
+            </motion.h2>
+            
+            {/* Vídeo em destaque - formato VERTICAL 9/16 */}
+            <div className="max-w-md mx-auto">
+              <VideoTestimonialCard 
+                videoId="lb6vOY1dNBQ"
+                title=""
+                aspectRatio="9/16"
+                showTitle={true}
+                fontBold={fontBold}
+                showHoverScale={true}
+                controls={0}
+              />
+            </div>
+            
+          </div>
+        </div>
+      </section>
 
       {/* 📋 5️⃣ RANKING GERAL KWAI */}
       <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#C00D5C' }}>
@@ -571,31 +572,31 @@ const tiktokShopRanking = [
             </motion.h2>
           </div>
           
-<motion.div 
-  className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-5xl mx-auto px-2"
-  initial="hidden"
-  whileInView="visible"
-  viewport={viewportConfig}
-  variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
->
-  {tiktokStatsConfig.map((stat, idx) => (
-    <motion.div 
-      key={idx} 
-      className="p-4 sm:p-6 rounded-2xl text-center" 
-      style={{ backgroundColor: '#F93BA3', boxShadow: '0 10px 40px rgba(249, 59, 163, 0.3)' }}
-      variants={scaleIn}
-      whileHover={{ scale: 1.05, y: -4 }}
-      transition={{ type: "spring", stiffness: 300, damping: 15 }}
-    >
-      <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white mb-1 sm:mb-2" style={fontExtraBold}>
-        {stat.value}
-      </div>
-      <p className="text-white/90 text-[10px] sm:text-sm" style={fontBold}>
-        {stat.label}
-      </p>
-    </motion.div>
-  ))}
-</motion.div>
+          <motion.div 
+            className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-5xl mx-auto px-2"
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportConfig}
+            variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
+          >
+            {tiktokStatsConfig.map((stat, idx) => (
+              <motion.div 
+                key={idx} 
+                className="p-4 sm:p-6 rounded-2xl text-center" 
+                style={{ backgroundColor: '#F93BA3', boxShadow: '0 10px 40px rgba(249, 59, 163, 0.3)' }}
+                variants={scaleIn}
+                whileHover={{ scale: 1.05, y: -4 }}
+                transition={{ type: "spring", stiffness: 300, damping: 15 }}
+              >
+                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white mb-1 sm:mb-2" style={fontExtraBold}>
+                  {stat.value}
+                </div>
+                <p className="text-white/90 text-[10px] sm:text-sm" style={fontBold}>
+                  {stat.label}
+                </p>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
@@ -696,65 +697,65 @@ const tiktokShopRanking = [
         </div>
       </section>
 
- {/* 🏆 RANKING GERAL TIKTOK SHOP - TOP 10 */}
-<section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-white">
-  <div className="max-w-7xl mx-auto">
-    <div className="max-w-5xl mx-auto px-2">
-      <motion.h2 
-        className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 sm:mb-12" 
-        style={{ ...fontExtraBold, color: '#C00D5C' }}
-        initial="hidden"
-        whileInView="visible"
-        viewport={viewportConfig}
-        variants={fadeInUp}
-      >
-        Ranking Geral TikTok Shop – Top 10
-      </motion.h2>
-      
-      <motion.div 
-        className="rounded-2xl p-4 sm:p-6 md:p-8" 
-        style={{ backgroundColor: '#F93BA3', boxShadow: '0 10px 40px rgba(249, 59, 163, 0.4)' }}
-        initial="hidden"
-        whileInView="visible"
-        viewport={viewportConfig}
-        variants={fadeInUp}
-      >
-        <div className="space-y-2 sm:space-y-3">
-          {tiktokShopRanking.map((creator, idx) => (
-            <motion.div 
-              key={idx} 
-              className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-colors"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.05, duration: 0.4 }}
-              whileHover={{ x: 5, backgroundColor: 'rgba(255,255,255,0.25)' }}
+      {/* 🏆 RANKING GERAL TIKTOK SHOP - TOP 10 */}
+      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="max-w-5xl mx-auto px-2">
+            <motion.h2 
+              className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 sm:mb-12" 
+              style={{ ...fontExtraBold, color: '#C00D5C' }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewportConfig}
+              variants={fadeInUp}
             >
-              <div className="text-xl sm:text-2xl md:text-3xl w-10 sm:w-12 text-center">
-                {idx === 0 && '🥇'}{idx === 1 && '🥈'}{idx === 2 && '🥉'}
-                {idx > 2 && <span className="text-white font-bold" style={fontExtraBold}>#{idx + 1}</span>}
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-white font-bold text-[10px] sm:text-sm md:text-base truncate" style={fontBold}>
-                  {creator.handle}
-                </p>
-              </div>
-              {/* ✅ LADO DIREITO COM GMV + ITENS VENDIDOS */}
-              <div className="text-right min-w-[80px] sm:min-w-[100px]">
-                <p className="text-white font-bold text-[10px] sm:text-sm md:text-base leading-tight" style={fontBold}>
-                  {creator.gmv}
-                </p>
-                <p className="text-white/70 text-[8px] sm:text-xs leading-tight" style={fontBold}>
-                  {creator.itemsSold?.toLocaleString('pt-BR')} itens vendidos
-                </p>
+              Ranking Geral TikTok Shop – Top 10
+            </motion.h2>
+            
+            <motion.div 
+              className="rounded-2xl p-4 sm:p-6 md:p-8" 
+              style={{ backgroundColor: '#F93BA3', boxShadow: '0 10px 40px rgba(249, 59, 163, 0.4)' }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewportConfig}
+              variants={fadeInUp}
+            >
+              <div className="space-y-2 sm:space-y-3">
+                {tiktokShopRanking.map((creator, idx) => (
+                  <motion.div 
+                    key={idx} 
+                    className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-colors"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: idx * 0.05, duration: 0.4 }}
+                    whileHover={{ x: 5, backgroundColor: 'rgba(255,255,255,0.25)' }}
+                  >
+                    <div className="text-xl sm:text-2xl md:text-3xl w-10 sm:w-12 text-center">
+                      {idx === 0 && '🥇'}{idx === 1 && '🥈'}{idx === 2 && '🥉'}
+                      {idx > 2 && <span className="text-white font-bold" style={fontExtraBold}>#{idx + 1}</span>}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-white font-bold text-[10px] sm:text-sm md:text-base truncate" style={fontBold}>
+                        {creator.handle}
+                      </p>
+                    </div>
+                    <div className="text-right min-w-[80px] sm:min-w-[100px]">
+                      <p className="text-white font-bold text-[10px] sm:text-sm md:text-base leading-tight" style={fontBold}>
+                        {creator.gmv}
+                      </p>
+                      <p className="text-white/70 text-[8px] sm:text-xs leading-tight" style={fontBold}>
+                        {creator.itemsSold?.toLocaleString('pt-BR')} itens vendidos
+                      </p>
+                    </div>
+                  </motion.div>
+                ))}
               </div>
             </motion.div>
-          ))}
+          </div>
         </div>
-      </motion.div>
-    </div>
-  </div>
-</section>
+      </section>
+
       {/* 📊 9️⃣ MÉTRICAS ESTRATÉGICAS TIKTOK SHOP */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
@@ -922,7 +923,8 @@ const tiktokShopRanking = [
               viewport={viewportConfig}
               variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
             >
-              <Link to="/kwai" className="w-full sm:w-auto">
+              {/* ✅ Path atualizado: /kwai → /ganhar-dinheiro-no-kwai */}
+              <Link to="/ganhar-dinheiro-no-kwai" className="w-full sm:w-auto">
                 <motion.button 
                   className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-full text-white font-bold flex items-center justify-center gap-2 sm:gap-3 hover:opacity-90 shadow-lg" 
                   style={{ backgroundColor: '#F93BA3', ...fontExtraBold, boxShadow: '0 10px 40px rgba(249, 59, 163, 0.4)' }}
@@ -936,7 +938,8 @@ const tiktokShopRanking = [
                 </motion.button>
               </Link>
               
-              <Link to="/tiktok-shop" className="w-full sm:w-auto">
+              {/* ✅ Path atualizado: /tiktok-shop → /como-vender-no-tiktok-shop */}
+              <Link to="/como-vender-no-tiktok-shop" className="w-full sm:w-auto">
                 <motion.button 
                   className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-full text-white font-bold flex items-center justify-center gap-2 sm:gap-3 hover:opacity-90 shadow-lg" 
                   style={{ backgroundColor: '#F93BA3', ...fontExtraBold, boxShadow: '0 10px 40px rgba(249, 59, 163, 0.4)' }}

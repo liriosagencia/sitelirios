@@ -177,7 +177,8 @@ export default function KwaiSC() {
               variants={fadeInUp}
               transition={{ delay: 0.3 }}
             >
-              <Link to="/contato" className="w-full sm:w-auto">
+              {/* ✅ Path atualizado: /contato → /entrar-na-agencia */}
+              <Link to="/entrar-na-agencia" className="w-full sm:w-auto">
                 <motion.button 
                   className="w-full sm:w-auto px-5 sm:px-6 md:px-8 py-3 sm:py-4 rounded-full text-white font-bold flex items-center justify-center gap-2 sm:gap-3 hover:opacity-90 shadow-lg" 
                   style={{ backgroundColor: '#F93BA3', ...fontExtraBold, boxShadow: '0 10px 40px rgba(249, 59, 163, 0.4)' }}
@@ -280,8 +281,7 @@ export default function KwaiSC() {
       </section>
 
       {/* ⚙ BLOCO 3 – COMO FUNCIONA */}
-      {/* ✅ ADICIONADO id="como-funciona" AQUI */}
-      <section  className="relative py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#C00D5C' }}>
+      <section className="relative py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#C00D5C' }}>
         <div className="max-w-7xl mx-auto">
           <div className="max-w-4xl mx-auto px-2">
             <motion.h2 
@@ -333,7 +333,8 @@ export default function KwaiSC() {
             variants={fadeInUp}
             transition={{ delay: 0.3 }}
           >
-            <Link to="/contato">
+            {/* ✅ Path atualizado: /contato → /entrar-na-agencia */}
+            <Link to="/entrar-na-agencia">
               <motion.button 
                 className="px-6 sm:px-8 py-3 sm:py-4 rounded-full text-white font-bold flex items-center gap-2 sm:gap-3 hover:opacity-90 shadow-lg mx-auto" 
                 style={{ backgroundColor: '#F93BA3', ...fontExtraBold, boxShadow: '0 10px 40px rgba(249, 59, 163, 0.4)' }}
@@ -642,7 +643,8 @@ export default function KwaiSC() {
               </motion.p>
               
               <motion.div variants={fadeInUp} transition={{ delay: 0.2 }}>
-                <Link to="/contato">
+                {/* ✅ Path atualizado: /contato → /entrar-na-agencia */}
+                <Link to="/entrar-na-agencia">
                   <motion.button 
                     className="px-8 sm:px-10 py-4 sm:py-5 rounded-full text-white font-bold text-sm sm:text-lg inline-flex items-center gap-2 sm:gap-3 hover:opacity-90 shadow-2xl" 
                     style={{ backgroundColor: '#F93BA3', ...fontExtraBold, boxShadow: '0 10px 40px rgba(249, 59, 163, 0.4)' }}
