@@ -97,8 +97,8 @@ const kwaiRanking = [
     { pos: 6, handle: "@Eiiiriba", views: "7,90M", category: "Life Records" },
     { pos: 7, handle: "@kellynhasilva323", views: "7,86M", category: "Life Records" },
     { pos: 8, handle: "@thiagorafaelwaack", views: "7,82M", category: "Life Records" },
-    { pos: 9, handle: "@raquelcilhau", views: "6,58M", category: "Life Records" },
-    { pos: 10, handle: "@vaquirromotos", views: "6,42M", category: "Life Records" }
+    { pos: 9, handle: "@raquelclhau", views: "6,58M", category: "Life Records" },
+    { pos: 10, handle: "@vaquriromotos", views: "6,42M", category: "Life Records" }
 ];
 
   const kwaiMetrics = [
