@@ -8,7 +8,7 @@ export default function WhatsAppFloat() {
       
       {/* Instagram - ícone responsivo */}
       <a
-        href="https://www.instagram.com/agencialiriosreserva"
+        href="https://www.instagram.com/agencialirioss"
         target="_blank"
         rel="noopener noreferrer"
         className="transition-all transform hover:scale-110 flex items-center justify-center p-2 -m-2"
