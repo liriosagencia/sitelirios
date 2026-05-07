@@ -51,7 +51,7 @@ export default function HallOfFame() {
   // 📅 ATUALIZAR DADOS AQUI TODO MÊS
   // ============================================
   
-  const currentMonth = "Março 2026";
+  const currentMonth = "Abril 2026";
 
   const kwaiStats = {
     views: "+422 Milhões",
