@@ -64,7 +64,7 @@ export default function HallOfFame() {
     { 
       rank: 2, 
       handle: "@NEGODOCOENTRO", 
-      views: "13,54M", 
+      views: "13,53M", 
       photo: rank2Photo, 
       profile: "https://kwai.com/@NEGODOCOENTRO",
       prize: "Bônus de Performance"
