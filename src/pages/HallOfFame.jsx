@@ -51,67 +51,67 @@ export default function HallOfFame() {
   // 📅 ATUALIZAR DADOS AQUI TODO MÊS
   // ============================================
   
-  const currentMonth = "Abril 2026";
+  const currentMonth = "Maio 2026";
 
   const kwaiStats = {
-    views: "+422 Milhões",
-    paid: "+R$ 320 Mil",
-    creators: "+536",
-    videos: "+24.737 mil"
+    views: "+450 Milhões",
+    paid: "+R$ 360 Mil",
+    creators: "+584",
+    videos: "+27.343 mil"
   };
 
   const top3Kwai = [
     { 
       rank: 2, 
-      handle: "@pintamagaofc", 
-      views: "15,28M", 
-      photo: rank1Photo, 
-      profile: "https://kwai.com/@pintamagaofc", 
-      featured: true,
-      prize: "Bônus de Performance" // ✅ Adicionado: propriedade prize
+      handle: "@NEGODOCOENTRO", 
+      views: "13,54M", 
+      photo: rank2Photo, 
+      profile: "https://kwai.com/@NEGODOCOENTRO",
+      prize: "Bônus de Performance"
     },
     { 
       rank: 1, 
-      handle: "@NEGODOCOENTRO", 
-      views: "16,16M", 
-      photo: rank2Photo, 
-      profile: "https://kwai.com/@NEGODOCOENTRO",
-      prize: "Premiação Ouro + Bônus" // ✅ Adicionado: propriedade prize
+      handle: "@pintamagaofc", 
+      views: "17,13M", 
+      photo: rank1Photo, 
+      profile: "https://kwai.com/@pintamagaofc", 
+      featured: true,
+      prize: "Premiação Ouro + Bônus"
     },
     { 
       rank: 3, 
       handle: "@adrielson074l", 
-      views: "13,84M", 
+      views: "12,39M", 
       photo: rank3Photo, 
       profile: "https://kwai.com/@adrielson074l",
-      prize: "Bônus de Destaque" // ✅ Adicionado: propriedade prize
+      prize: "Bônus de Destaque"
     }
   ];
 
 const kwaiRanking = [
-    { pos: 1, handle: "@NEGODOCOENTRO", views: "16,16M", category: "Comedy & Funny" },
-    { pos: 2, handle: "@pintamagaofc", views: "15,28M", category: "Comedy & Funny" },
-    { pos: 3, handle: "@adrielson074l", views: "13,84M", category: "Life Records" },
-    { pos: 4, handle: "@MANOFLIXX999", views: "10,90M", category: "Life Records" },
-    { pos: 5, handle: "@roniel.603.", views: "8,96M", category: "Life Records" },
-    { pos: 6, handle: "@Eiiiriba", views: "7,90M", category: "Life Records" },
-    { pos: 7, handle: "@kellynhasilva323", views: "7,86M", category: "Life Records" },
-    { pos: 8, handle: "@thiagorafaelwaack", views: "7,82M", category: "Life Records" },
-    { pos: 9, handle: "@raquelclhau", views: "6,58M", category: "Life Records" },
-    { pos: 10, handle: "@vaquriromotos", views: "6,42M", category: "Life Records" }
+    { pos: 1, handle: "@pintamagaofc", views: "17,13M", category: "Comedy & Funny" },
+    { pos: 2, handle: "@NEGODOCOENTRO", views: "13,53M", category: "Comedy & Funny" },
+    { pos: 3, handle: "@adrielson074l", views: "12,39M", category: "Life Records" },
+    { pos: 4, handle: "@irmas.terra", views: "9,26M", category: "Life Records" },
+    { pos: 5, handle: "@raquelclhau", views: "8,99M", category: "Life Records" },
+    { pos: 6, handle: "@leoniltonsilva748", views: "8,63M", category: "Life Records" },
+    { pos: 7, handle: "@thiagorafaelwaack", views: "6,37M", category: "Life Records" },
+    { pos: 8, handle: "@zflpx570", views: "6,00M", category: "Life Records" },
+    { pos: 9, handle: "@coisasnordestesaude", views: "5,72M", category: "Life Records" },
+    { pos: 10, handle: "@joaovlogs100k983", views: "5,53M", category: "Life Records" }
 ];
 
   const kwaiMetrics = [
-    { label: "Média de views por criador", value: "690,7k" },
-    { label: "Média de vídeos publicados", value: "43/criador" },
-    { label: "Criadores que monetizaram", value: "439" },
-    { label: "Taxa média de atividade", value: "75,8%" }
+    { label: "Média de views por criador", value: "667,7k" },
+    { label: "Média de vídeos publicados", value: "46/criador" },
+    { label: "Criadores que monetizaram", value: "460" },
+    { label: "Taxa média de atividade", value: "73,8%" }
   ];
 
   const tiktokShopStats = {
-    gmv: "R$ 1.4M",
+    gmv: "R$ 1.2M",
     activeCreators: "131",
-    productsSold: "27.857K"
+    productsSold: "19.853K"
   };
 
   const tiktokStatsConfig = [
@@ -120,48 +120,48 @@ const kwaiRanking = [
     { label: "Produtos vendidos", value: tiktokShopStats.productsSold }
   ];
 
-  const topTikTokShop = [
+const topTikTokShop = [
     { 
-      handle: "@xandy3601", 
-      gmv: "R$ 121.382,52", 
-      product: "1998", 
+      handle: "@shopdoalmeida", 
+      gmv: "R$ 166.100,91", 
+      product: "1298", 
       photo: tiktokRank1, 
-      profile: "https://www.tiktok.com/@xandy3601" 
+      profile: "https://www.tiktok.com/@shopdoalmeida" 
+    },
+    { 
+      handle: "@araraazul60", 
+      gmv: "R$ 98.672,49", 
+      product: "1026", 
+      photo: tiktokRank2, 
+      profile: "https://www.tiktok.com/@araraazul60" 
     },
     { 
       handle: "@resenharecomenda", 
-      gmv: "R$ 120.975,14", 
-      product: "4265", 
-      photo: tiktokRank2, 
+      gmv: "R$ 95.698,14", 
+      product: "1929", 
+      photo: tiktokRank3, 
       profile: "https://www.tiktok.com/@resenharecomenda" 
     },
-    { 
-      handle: "@shopdoalmeida", 
-      gmv: "R$ 112.520,38", 
-      product: "1028", 
-      photo: tiktokRank3, 
-      profile: "https://www.tiktok.com/@shopdoalmeida" 
-    },
-  ];
+];
 
   const tiktokShopMetrics = [
-    { label: "Número total de pedidos", value: "27857" },
-    { label: "Taxa de vendas", value: "75%" },
-    { label: "Criadores que venderam", value: "91" },
-    { label: "Média de GMV por criador", value: "R$ 19.437K" }
+    { label: "Número total de pedidos", value: "19853" },
+    { label: "Taxa de vendas", value: "71%" },
+    { label: "Criadores que venderam", value: "93" },
+    { label: "Média de GMV por criador", value: "R$ 12.437K" }
   ];
 
 const tiktokShopRanking = [
-    { pos: 1, handle: "@xandy3601", gmv: "R$ 121.382,52", itemsSold: 1998 },
-    { pos: 2, handle: "@resenharecomenda", gmv: "R$ 120.975,14", itemsSold: 4265 },
-    { pos: 3, handle: "@shopdoalmeida", gmv: "R$ 112.520,38", itemsSold: 1028 },
-    { pos: 4, handle: "@araraazul60", gmv: "R$ 100.046,16", itemsSold: 883 },
-    { pos: 5, handle: "@acaciamarquess", gmv: "R$ 97.912,81", itemsSold: 2798 },
-    { pos: 6, handle: "@cortes.da.constru", gmv: "R$ 89.760,88", itemsSold: 358 },
-    { pos: 7, handle: "@realidadedaama", gmv: "R$ 78.168,97", itemsSold: 2636 },
-    { pos: 8, handle: "@alicinhaebianca", gmv: "R$ 53.738,33", itemsSold: 1181 },
-    { pos: 9, handle: "@jesca.limma", gmv: "R$ 46.923,43", itemsSold: 1438 },
-    { pos: 10, handle: "@valeriiasza", gmv: "R$ 44.890,92", itemsSold: 581 }
+    { pos: 1, handle: "@shopdoalmeida", gmv: "R$ 166.100,91", itemsSold: 1298 },
+    { pos: 2, handle: "@araraazul60", gmv: "R$ 98.672,49", itemsSold: 1026 },
+    { pos: 3, handle: "@resenharecomenda", gmv: "R$ 95.698,14", itemsSold: 1929 },
+    { pos: 4, handle: "@xandy3601", gmv: "R$ 87.150,45", itemsSold: 1364 },
+    { pos: 5, handle: "@cortes.da.constru", gmv: "R$ 83.350,42", itemsSold: 320 },
+    { pos: 6, handle: "@acaciamarquess", gmv: "R$ 68.012,58", itemsSold: 2086 },
+    { pos: 7, handle: "@shop_do_m.a", gmv: "R$ 67.704,74", itemsSold: 801 },
+    { pos: 8, handle: "@alicinhaebianca", gmv: "R$ 62.123,05", itemsSold: 1295 },
+    { pos: 9, handle: "@realidadedaamanda", gmv: "R$ 48.474,95", itemsSold: 1556 },
+    { pos: 10, handle: "@shopdomarcus", gmv: "R$ 39.832,02", itemsSold: 661 }
 ];
 
   // Fonts reutilizáveis
