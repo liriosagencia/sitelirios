@@ -46,8 +46,8 @@ export default function Contact() {
       title: "KWAI LIVE",
       desc: "Transmissões ao vivo com metas estruturadas e monetização por presentes.",
       icon: kwai,
-      link: "https://wa.me/5511974326781?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Ag%C3%AAncia%20L%C3%ADrios%20e%20quero%20saber%20mais%20sobre%20oportunidades%20no%20kwai%20live",
-      phone: "5511974326781",
+      link: "https://wa.me/5543991474598?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Ag%C3%AAncia%20L%C3%ADrios%20e%20quero%20saber%20mais%20sobre%20oportunidades%20no%20kwai%20live",
+      phone: "5543991474598",
       message: "Olá, vim pelo site da Agência Lírios e quero saber mais sobre Kwai Live."
     },
     {
